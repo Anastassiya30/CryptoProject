@@ -1,6 +1,7 @@
 # CryptoProject
 
-A project in which I developed a bot like a money changer that has the following functions:
+A project in which I developed a bot like a money changer. A bot that helps user to find out currency he needs in a seconds.
+Money changer has the following functions:
 1. start command with "/start" or "/issue" commands;
 2. opportunity to read instructions for using the currency exchanger;
 3. opportunity to select currency you need from available currencies list;
