@@ -29,7 +29,7 @@ def values(message: telebot.types.Message):
 def get_price(message: telebot.types.Message):
 
     try:
-        parameters = message.text.split(" ")
+        parameters = list(map(lambda i: i.lower(), message.text.split(" ")))
 
         if len(parameters) != 3:
             raise APIException("Enter required parameters (it should be 3)")
