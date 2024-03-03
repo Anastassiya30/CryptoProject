@@ -30,7 +30,7 @@ class CryptoConverter:
         except ValueError:
             raise APIException(f"Incorrect value: {amount}. Please try again")
 
-        r = requests.get(f"https://min-api.cryptocompare.com/data/price?fsym={quote_ticker}&tsyms={base_ticker}")
+        r = requests.get(f"https://min-api.cryptocompare.com/data/price?fsym={base_ticker}&tsyms={quote_ticker}")
         total_base = json.loads(r.content)[keys[quote]]
         total_base = total_base * amount
         return total_base
